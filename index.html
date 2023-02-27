@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar App</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font asewome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <!-- CSS Style Sheet -->
+    <link rel="stylesheet" href="./src/style.scss" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Calendar Component -->
+      <div class="calendar">
+        <!-- Calendar Heading -->
+        <div class="calendar__heading c-heading">
+          <button
+            type="button"
+            class="c-heading__button c-heading__button--left"
+            id="c-heading__button--left"
+          >
+            <span>
+              <i class="fa-solid fa-chevron-left"></i>
+            </span>
+          </button>
+
+          <h3 class="c-heading__date c-heading__date--month">April</h3>
+
+          <button
+            type="button"
+            class="c-heading__button c-heading__button--right"
+            id="c-heading__button--right"
+          >
+            <span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+          </button>
+        </div>
+
+        <div class="calendar__year">
+          <h3 class="c-heading__date c-heading__date--year">2023</h3>
+        </div>
+
+        <!-- Calendar Body -->
+        <div class="calender__body c-body">
+          <ul class="c-body__list c-body__list--week">
+            <li class="c-body__item c-body__item--week">Su</li>
+            <li class="c-body__item c-body__item--week">Mo</li>
+            <li class="c-body__item c-body__item--week">Tu</li>
+            <li class="c-body__item c-body__item--week">We</li>
+            <li class="c-body__item c-body__item--week">Th</li>
+            <li class="c-body__item c-body__item--week">Fr</li>
+            <li class="c-body__item c-body__item--week">Sa</li>
+          </ul>
+
+          <ul class="c-body__list c-body__list--days"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/main.js"></script>
+  </body>
+</html>
